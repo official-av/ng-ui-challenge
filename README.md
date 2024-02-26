@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Approach
 - import seed project and create new github repo https://github.com/official-av/ng-16-seed - done
 - switch to scss - done
-- create mock-data file with tariffs array
+- create mock-data file with tariffs array - done
 - create mock service and add tests
 - implement mock service to return the tariffs mock data async and add sort implementation
 - create components and add tests
