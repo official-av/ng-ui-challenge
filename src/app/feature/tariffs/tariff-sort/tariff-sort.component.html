@@ -1,6 +1,9 @@
 <div class="tariff-sort">
     <!-- sort button asc/desc -->
-    <button (click)="handleSortEvent()">{{isAsc?'Ascending':'Descending'}}</button>
+    <button mat-raised-button (click)="handleSortEvent()">
+        <ng-container *ngIf="isAsc;else desc"><mat-icon>arrow_upward</mat-icon></ng-container>
+        <ng-template  #desc><mat-icon>arrow_downward</mat-icon></ng-template>
+    </button>
     <!-- filter list -->
     <select name="filters" (change)="handleFilterEvent($event)">
         <option *ngFor="let f of filters" [selected]="filter===f" [value]="f">{{filtersEnum[f]}}</option>

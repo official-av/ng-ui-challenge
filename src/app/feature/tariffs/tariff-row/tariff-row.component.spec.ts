@@ -18,6 +18,4 @@ describe('TariffRowComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  // TODO: test tariff download speed UI
-  // TODO: test tariff price UI
 });

@@ -1,8 +1,62 @@
+@import "../../../../styles.scss";
+
 .tariff-row {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: #fefefe;
+  padding: 1rem;
+  margin: 0.5rem;
+  span {
+    margin-right: 1rem;
+    &.tariff-name,
+    &.tariff-speed {
+      width: 100px;
+    }
+  }
+  .tariff-speed {
     display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    border:2px solid black;
-    background: #fefefe;
-    padding: 1rem;
+    flex-direction: column;
+  }
+  &:hover {
+    background-color: $color-primary-hover;
+    cursor: pointer;
+    color: white;
+  }
+  .cta-btn {
+    display: inline-flex;
+    cursor: pointer;
+  }
+  .download-speed {
+    display: inline-flex;
+  }
+  .upload-speed {
+    display: inline-flex;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .tariff-benefits {
+    display: none;
+  }
+  .upload-speed {
+    display: none !important;
+  }
+  .cta-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .tariff-benefits {
+    display: none;
+  }
+  .upload-speed {
+    display: none !important;
+  }
+  .cta-label {
+    display: none;
+  }
 }

@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+$color-primary: #3f51b5;
+$color-primary-hover: #5e72e4ed;
+$color-primary-bg: #1d3adc46;
+
+$breakpoint-tablet: 1024px;
+// ipad pro
+$breakpoint-mobile: 600px;
+// iphone 12 pro

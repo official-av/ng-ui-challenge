@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { BehaviorSubject, combineLatest, map } from "rxjs";
 import { TariffFilter } from "./feature/tariffs/TariffFilter.enum";
 import { TariffListComponent } from "./feature/tariffs/tariff-list/tariff-list.component";
@@ -10,6 +10,7 @@ import { TariffService } from "./feature/tariffs/tariff.service";
   selector: "app-root",
   standalone: true,
   imports: [CommonModule, TariffListComponent, TariffSortComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
 })

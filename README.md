@@ -33,11 +33,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - create mock service and add tests - done
 - implement mock service to return the tariffs mock data async and add sort implementation - done
 - create components and add tests - done
-- implement tariff-row component with presentation UI and tariff input
-- implement tariff-list component with container UI, list of tariff-row and sorting using tariff-sort component
-- implement tariff-sort component with presentation UI and events to do sort by criteria + by asc/desc
-- adjust styles to make mobile, tablet friendly
-- optimisations + misc
+- implement tariff-row component with presentation UI and tariff input - done
+- implement tariff-list component with container UI, list of tariff-row and sorting using tariff-sort component - done
+- implement tariff-sort component with presentation UI and events to do sort by criteria + by asc/desc - done
+- adjust styles to make mobile, tablet friendly - done
+- add CSS for good UI/UX - done
+- optimisations + misc - use track by, use pure pipes - done, use shimmer
 
 # Decisions
 - why use angular 16 standalone app: becuase it's performant and backward compatible (LTS till Nov2024)

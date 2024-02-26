@@ -1,10 +1,21 @@
 <div *ngIf="tariff" class="tariff-row">
-    <!-- Tariff ID-->
-    <span>{{tariff.id}}</span>
-    <span>{{tariff.name}}</span>
-    <span>{{tariff.downloadSpeed}} MBits/sec</span>
-    <span>{{tariff.uploadSpeed}} MBits/sec</span>
-    <span>{{tariff.benefits}}</span>
-    <span>{{tariff.price}}</span>
-    <button>Go to Tariff</button>
+    <span class="tariff-id"><strong>{{tariff.id}}</strong></span>
+    <span class="tariff-name">{{tariff.name}}</span>
+    <div class="tariff-speed">
+        <div class="download-speed">
+            <mat-icon>download</mat-icon>
+            <div>{{tariff.downloadSpeed | speed}}</div>
+        </div>
+        <div class="upload-speed">
+            <mat-icon>upload</mat-icon>
+            <div>{{tariff.uploadSpeed | speed}}</div>
+        </div>
+    </div>
+
+    <span class="tariff-benefits">{{tariff.benefits| benefits}}</span>
+    <span class="tariff-price">{{tariff.price| currency: 'EUR' }}</span>
+    <button class="cta-btn" mat-raised-button color="primary" aria-label="Go to Tariff">
+        <div class="cta-label">Go to Tariff</div>
+        <mat-icon>arrow_forward_ios</mat-icon>
+    </button>
 </div>
