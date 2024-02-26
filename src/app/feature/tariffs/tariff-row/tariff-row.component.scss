@@ -1,3 +1,8 @@
 .tariff-row {
-    // TODO: add css for mobile, tablet and desktop
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    border:2px solid black;
+    background: #fefefe;
+    padding: 1rem;
 }

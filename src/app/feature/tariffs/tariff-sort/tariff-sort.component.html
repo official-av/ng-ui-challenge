@@ -1,4 +1,8 @@
 <div class="tariff-sort">
     <!-- sort button asc/desc -->
+    <button (click)="handleSortEvent()">{{isAsc?'Ascending':'Descending'}}</button>
     <!-- filter list -->
+    <select name="filters" (change)="handleFilterEvent($event)">
+        <option *ngFor="let f of filters" [selected]="filter===f" [value]="f">{{filtersEnum[f]}}</option>
+    </select>
 </div>

@@ -1,9 +1,10 @@
 <div *ngIf="tariff" class="tariff-row">
     <!-- Tariff ID-->
-    <!-- Tariff Name-->
-    <!-- Tariff Download Speed-->
-    <!-- Tariff Upload Speed-->
-    <!-- Tariff benefits -->
-    <!-- Tariff Price -->
-    <!-- Tariff CTA -->
+    <span>{{tariff.id}}</span>
+    <span>{{tariff.name}}</span>
+    <span>{{tariff.downloadSpeed}} MBits/sec</span>
+    <span>{{tariff.uploadSpeed}} MBits/sec</span>
+    <span>{{tariff.benefits}}</span>
+    <span>{{tariff.price}}</span>
+    <button>Go to Tariff</button>
 </div>

@@ -1,1 +1,6 @@
 <h1>Ng-UI-Challenge</h1>
+<!-- tariff sort -->
+<app-tariff-sort (sortOrderChanged)="handleSortOrder($event)" (filterChanged)="handleFilterOrder($event)" ></app-tariff-sort>
+<ng-container *ngIf="tariffs$|async as tariffs">
+    <app-tariff-list [tariffs]="tariffs"></app-tariff-list>
+</ng-container>

@@ -1,4 +1,6 @@
 <div class="tariff-list">
-    <!-- tariff sort -->
     <!-- rows of tariffs -->
+    <ng-container *ngFor="let t of tariffs;let i = index">
+        <app-tariff-row [tariff]="t"></app-tariff-row>
+    </ng-container>
 </div>
