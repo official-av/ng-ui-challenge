@@ -30,9 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - import seed project and create new github repo https://github.com/official-av/ng-16-seed - done
 - switch to scss - done
 - create mock-data file with tariffs array - done
-- create mock service and add tests
-- implement mock service to return the tariffs mock data async and add sort implementation
-- create components and add tests
+- create mock service and add tests - done
+- implement mock service to return the tariffs mock data async and add sort implementation - done
+- create components and add tests - done
 - implement tariff-row component with presentation UI and tariff input
 - implement tariff-list component with container UI, list of tariff-row and sorting using tariff-sort component
 - implement tariff-sort component with presentation UI and events to do sort by criteria + by asc/desc
