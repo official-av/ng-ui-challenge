@@ -27,8 +27,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 # Approach
-- import seed project and create new github repo https://github.com/official-av/ng-16-seed
-- switch to scss
+- import seed project and create new github repo https://github.com/official-av/ng-16-seed - done
+- switch to scss - done
 - create mock-data file with tariffs array
 - create mock service and add tests
 - implement mock service to return the tariffs mock data async and add sort implementation
